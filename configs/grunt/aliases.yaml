@@ -1,0 +1,212 @@
+## DEFAULT ##
+
+default:
+  - 'dev'
+
+
+
+## START ##
+# This task must be used just once to setup the project for the first time.
+
+start:
+   description: 'Starting up the project for the first time'
+   tasks:
+     - 'clean:all'
+     - 'concurrent:init_dev'
+     - 'concurrent:init_prod'
+     - 'pdf'
+     - 'domain'
+     - 'favicons'
+     - 'serve'
+
+
+
+## UPDATE TASKS ##
+#  All update tasks get run by the "watch" task only if a change occurs during a working process.
+
+update_markup:
+   description: 'Running update markup tasks'
+   tasks:
+     - 'clean:dev_markup'
+     - 'jade:dev'
+
+update_styles:
+   description: 'Running update styles tasks'
+   tasks:
+     - 'scsslint'
+     - 'clean:dev_styles'
+     - 'compass:dev'
+
+update_scripts:
+   description: 'Running update scripts tasks'
+   tasks:
+     - 'jshint'
+     - 'clean:dev_scripts'
+     - 'concat:dev'
+     - 'uglify:dev'
+
+
+
+## START TASKS ##
+#  All environment tasks get run only by the "start" task.
+
+start_dev_markup:
+   description: 'Running start dev markup tasks'
+   tasks:
+     - 'jade:dev'
+
+start_dev_styles:
+   description: 'Running start dev styles tasks'
+   tasks:
+     - 'compass:dev'
+
+start_dev_scripts:
+   description: 'Running start dev scripts tasks'
+   tasks:
+     - 'concat:dev'
+     - 'uglify:dev'
+
+start_prod_markup:
+   description: 'Running start prod markup tasks'
+   tasks:
+     - 'jade:prod'
+     - 'htmlmin:prod'
+
+start_prod_styles:
+   description: 'Running start prod styles tasks'
+   tasks:
+     - 'compass:prod'
+
+start_prod_scripts:
+   description: 'Running start prod scripts tasks'
+   tasks:
+     - 'concat:prod'
+     - 'replace:css_selector'
+     - 'uglify:prod'
+
+
+
+## DEV TASKS ##
+#  All dev tasks get run only by the "dev" task when start working.
+
+dev_markup:
+   description: 'Running dev markup tasks'
+   tasks:
+     - 'jade:dev'
+
+dev_styles:
+   description: 'Running dev styles tasks'
+   tasks:
+     - 'compass:dev'
+
+dev_scripts:
+   description: 'Running dev scripts tasks'
+   tasks:
+     - 'concat:dev'
+     - 'uglify:dev'
+
+
+
+## PROD TASKS ##
+#  All environment tasks get run only by the "prod" task when everything is ready for production.
+
+prod_markup:
+   description: 'Running prod markup tasks'
+   tasks:
+     - 'jade:prod'
+     - 'htmlmin:prod'
+
+prod_styles:
+   description: 'Running prod styles tasks'
+   tasks:
+     - 'compass:prod'
+     - 'parker'
+
+prod_scripts:
+   description: 'Running prod scripts tasks'
+   tasks:
+     - 'concat:prod'
+     - 'replace:css_selector'
+     - 'uglify:prod'
+
+
+
+## OTHER TASKS ##
+
+favicons:
+   description: 'Running favicons tasks'
+   tasks:
+     - 'clean:favicons'
+     - 'realFavicon'
+
+pdf:
+   description: 'Running PDF tasks'
+   tasks:
+     - 'clean:pdf'
+     - 'copy:pdf'
+
+certificates:
+   description: 'Running certificates tasks'
+   tasks:
+     - 'clean:certificates'
+     - 'copy:certificates'
+
+
+
+## BUILD ##
+
+dev:
+   description: 'Firing up the dev environment'
+   tasks:
+     - 'concurrent:dev'
+     - 'serve'
+
+prod:
+  description: 'Building up production'
+  tasks:
+    - 'concurrent:prod'
+
+
+
+## SERVE ##
+
+serve:
+  description: 'Running server tasks'
+  tasks:
+    - 'connect'
+    - 'open:dev'
+    - 'watch'
+
+
+
+## RELEASE ##
+
+release:
+   description: 'Releasing a version'
+   tasks:
+     - 'prod'
+     - 'pdf'
+     - 'certificates'
+     - 'domain'
+     - 'conventionalChangelog'
+     - 'bump-commit'
+     - 'shell:deploy'
+     - 'open:prod'
+
+patch:
+  description: 'Releasing a patch version'
+  tasks:
+    - 'bump-only:patch'
+    - 'release'
+
+minor:
+  description: 'Releasing a minor version'
+  tasks:
+    - 'bump-only:minor'
+    - 'release'
+
+major:
+  description: 'Releasing a major version'
+  tasks:
+    - 'bump-only:major'
+    - 'release'

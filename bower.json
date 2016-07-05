@@ -1,0 +1,33 @@
+{
+  "name": "cv",
+  "title": "Daniela Metodieva's CV",
+  "description": "Daniela Metodieva's CV",
+  "keywords": [
+    "daniela",
+    "metodieva",
+    "cv",
+    "resume",
+    "curriculum",
+    "vitae"
+  ],
+  "version": "0.0.0",
+  "private": true,
+  "homepage": "http://cv.daniela.pro",
+  "authors": [
+    {
+      "name": "Daniela Metodieva",
+      "email": "metodieva.daniel@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/danielametodieva/cv.git"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "css_browser_selector": "*",
+    "jquery": "~2.1.4",
+    "normalize-css": "^4.1.1",
+    "fastclick": "^1.0.6"
+  }
+}
