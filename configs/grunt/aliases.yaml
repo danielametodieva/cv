@@ -45,6 +45,18 @@ update_scripts:
      - 'concat:dev'
      - 'uglify:dev'
 
+update_pdf:
+   description: 'Running update pdf tasks'
+   tasks:
+     - 'clean:dev_pdf'
+     - 'copy:dev_pdf'
+
+update_certificates:
+   description: 'Running update certificates tasks'
+   tasks:
+     - 'clean:dev_certificates'
+     - 'copy:dev_certificates'
+
 
 
 ## START TASKS ##
@@ -105,6 +117,16 @@ dev_scripts:
      - 'concat:dev'
      - 'uglify:dev'
 
+dev_pdf:
+   description: 'Running dev pdf tasks'
+   tasks:
+     - 'newer:copy:dev_pdf'
+
+dev_certificates:
+   description: 'Running dev certificates tasks'
+   tasks:
+     - 'newer:copy:dev_certificates'
+
 
 
 ## PROD TASKS ##
@@ -128,6 +150,16 @@ prod_scripts:
      - 'concat:prod'
      - 'replace:css_selector'
      - 'uglify:prod'
+
+prod_pdf:
+   description: 'Running prod pdf tasks'
+   tasks:
+     - 'newer:copy:prod_pdf'
+
+prod_certificates:
+   description: 'Running prod certificates tasks'
+   tasks:
+     - 'newer:copy:prod_certificates'
 
 
 
@@ -185,9 +217,6 @@ release:
    description: 'Releasing a version'
    tasks:
      - 'prod'
-     - 'pdf'
-     - 'certificates'
-     - 'domain'
      - 'conventionalChangelog'
      - 'bump-commit'
      - 'shell:deploy'

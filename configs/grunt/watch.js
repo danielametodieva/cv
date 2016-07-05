@@ -22,5 +22,15 @@ module.exports = {
     favicons: {
         files: ['src/images/favicon.png'],
         tasks: ['favicons']
+    },
+
+    pdf: {
+        files: ['src/cv.pdf'],
+        tasks: ['update_pdf']
+    },
+
+    certificates: {
+        files: ['src/certificates/**/*'],
+        tasks: ['update_certificates']
     }
 };

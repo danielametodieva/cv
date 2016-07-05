@@ -11,6 +11,8 @@ module.exports = {
     dev_markup:  ['dist/dev/assets/*.html'],
     dev_styles:  ['dist/dev/assets/css'],
     dev_scripts: ['dist/dev/assets/scripts'],
+    dev_pdf: ['dist/dev/cv.pdf'],
+    dev_certificates: ['dist/dev/certificates'],
 
     // PROD
     prod: [
@@ -18,16 +20,13 @@ module.exports = {
         '!dist/prod/assets/favicons'
     ],
 
+    prod_pdf: ['dist/prod/cv.pdf'],
+    prod_certificates: ['dist/prod/certificates'],
+
     // FAVICONS
     favicons: [
         'dist/dev/assets/favicons',
         'dist/prod/assets/favicons'
-    ],
-
-    // PDF
-    pdf: ['dist/prod/cv.pdf'],
-
-    // Certificates
-    certificates: ['dist/prod/certificates']
+    ]
 
 };
