@@ -1,0 +1,25 @@
+{
+  "title": "Daniela Metodieva",
+  "contacts": {
+    "profiles": {
+      "linkedin": {
+        "label": "LinkedIn",
+        "url": "https://bg.linkedin.com/in/daniela-metodieva-2373a083"
+      },
+      "behance": {
+        "label": "Behance",
+        "url": "http://behance.net/DanielaGrozdanova"
+      }
+    },
+    "data": {
+      "email": "metodieva.daniel@gmail.com",
+      "phone": "+359 (87) 8680598"
+    }
+  },
+  "addons": {
+    "pdf": {
+      "filename": "Daniela Metodieva's CV.pdf",
+      "url": "http://cv.daniela.pro/cv.pdf"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+mixin pro_experience(name, data)
+    .categories.cf
+        each val, index in data.content
+            .category(data-experience='#{index}')
+                h3.label #{val.label}
+                ul
+                    each item in val.list
+                        li #{item}

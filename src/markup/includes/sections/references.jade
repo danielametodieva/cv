@@ -1,0 +1,11 @@
+mixin references(name, data)
+    ul.contacts
+        each contact in data.content
+            li.contact.cf
+                .person
+                    a(href='#{contact.url}', target='_blank') #{contact.person}
+                    span.info
+                        | #{contact.relation},&nbsp;
+                        br
+                        | #{contact.position}
+                .phone.meta.dark #{contact.phone}
