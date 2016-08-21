@@ -1,6 +1,6 @@
-[![Build Status](https://api.travis-ci.org/danielametodieva/cv.svg)](https://travis-ci.org/danielametodieva/cv) [![devDependencies](https://david-dm.org/danielametodieva/cv/dev-status.svg)](https://david-dm.org/danielametodieva/cv?type=dev) [![GitHub version](https://badge.fury.io/gh/danielametodieva%2Fcv.svg)](https://badge.fury.io/gh/danielametodieva%2Fcv)
-
 # Daniela Metodieva's CV
+
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.svg)](http://gruntjs.com/) [![Travis](https://img.shields.io/travis/danielametodieva/cv.svg)](https://travis-ci.org/danielametodieva/cv) [![David](https://img.shields.io/david/dev/martinmethod/cv.svg)](https://david-dm.org/danielametodieva/cv?type=dev) [![GitHub release](https://img.shields.io/github/release/danielametodieva/cv.svg)](https://github.com/danielametodieva/cv/releases/latest)
 
 Photography has been part of me since I got my first job position as a photo assistant. I was fascinated by the ability to tell stories through pictures. So I started experimenting with some personal ideas of photo projects.
 
