@@ -10,7 +10,7 @@
     "curriculum",
     "vitae"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "homepage": "http://cv.daniela.pro",
   "authors": [
@@ -26,8 +26,8 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "css_browser_selector": "*",
-    "jquery": "~2.1.4",
-    "normalize-css": "^4.1.1",
+    "jquery": "~2.2.4",
+    "normalize-css": "^4.2.0",
     "fastclick": "^1.0.6"
   }
 }
