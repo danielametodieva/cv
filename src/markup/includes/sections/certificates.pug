@@ -1,7 +1,7 @@
 mixin certificates(name, data)
-    ul.certificates
-        each item in data.content
-            li.certificate
-                a(target='_blank', href=item.url) #{item.name}
-                | &nbsp;by #{item.authority}&nbsp;
-                span.meta.dark (#{item.date})
+  ul.certificates
+    each item in data.content
+      li.certificate
+        a(target='_blank', href=item.url) #{item.name}
+        | &nbsp;by #{item.authority}&nbsp;
+        span.meta.dark (#{item.date})
