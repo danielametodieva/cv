@@ -1,3 +1,19 @@
+<a name="1.1.0"></a>
+# 1.1.0 (2016-08-29)
+
+
+### Bug Fixes
+
+* **Dependencies' banners:** Removed with stripCssComments ([f1db1c3](https://github.com/danielametodieva/cv/commit/f1db1c3))
+
+
+### Features
+
+* **Pug lint:** Added linter for Pug markup ([389e487](https://github.com/danielametodieva/cv/commit/389e487))
+* **Travis:** NodeJS set as an environment ([e729272](https://github.com/danielametodieva/cv/commit/e729272))
+
+
+
 <a name="1.0.1"></a>
 ## 1.0.1 (2016-08-21)
 
