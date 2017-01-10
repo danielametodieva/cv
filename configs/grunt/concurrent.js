@@ -16,7 +16,8 @@ module.exports = {
 
     prod: [
         'htmlmin',
-        'copy:pdf'
+        'copy:pdf',
+        'copy:certificates'
     ],
 
     review: [

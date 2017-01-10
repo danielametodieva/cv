@@ -8,6 +8,16 @@ module.exports = {
             src: ['cv.pdf'],
             dest: 'dist/'
         }]
+    },
+
+    // Certificates
+    certificates: {
+        files: [{
+            expand: true,
+            cwd: 'src/certificates',
+            src: ['*.*'],
+            dest: 'dist/certificates'
+        }]
     }
 
 };
