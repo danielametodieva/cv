@@ -1,3 +1,13 @@
+<a name="1.1.1"></a>
+## 1.1.1 (2017-01-10)
+
+
+### Bug Fixes
+
+* **Certificate:** Restored missed certificate ([6bb484a](https://github.com/danielametodieva/cv/commit/6bb484a))
+
+
+
 <a name="1.1.0"></a>
 # 1.1.0 (2016-08-29)
 
