@@ -81,8 +81,16 @@
     }
   }
 
-  .download {
-    .text::after { content: 'Download'; }
+  @at-root {
+    .download .text::after {
+      html[lang='en'] & {
+        content: 'Download';
+      }
+
+      html[lang='bg'] & {
+        content: 'Свали PDF';
+      }
+    }
   }
 
 }

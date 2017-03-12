@@ -1,6 +1,6 @@
 header.title.cf
-  if base.title
-    h1 #{base.title}
+  if data.name
+    h1 #{data.name}
 
   .subline.cf
     if base.contacts
@@ -12,11 +12,11 @@ header.title.cf
         if base.contacts.profiles
           each val, index in base.contacts.profiles
             span.contact.meta.dark(class=index)
-              a(class=index, href=val.url, target='_blank', title='Go to my ' + val.label + ' profile') #{val.label} profile
+              a(class=index, href=val.url, target='_blank', title=labels.profiles.tooltip + ' ' + val.label + ' ' + labels.profiles.suffix) #{val.label} #{labels.profiles.suffix}
 
-    if base.addons
+    if data.addons
       .tools
-        if base.addons.pdf
-          a.tool.meta.download(target='_blank', href=base.addons.pdf.url, download=base.addons.pdf.filename)
+        if data.addons.pdf
+          a.tool.meta.download(target='_blank', href=data.addons.pdf.url, download=data.addons.pdf.filename)
             span.icon
             span.text

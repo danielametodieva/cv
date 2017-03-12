@@ -11,13 +11,17 @@ module.exports = {
         ['stripCssComments', 'compass'],
 
         // scripts
-        ['concat', 'uglify']
+        ['concat', 'uglify'],
+
+        // resumes
+        ['clean:resumes', 'copy:resumes'],
+
+        // certificates
+        ['clean:certificates', 'copy:certificates']
     ],
 
     prod: [
-        'htmlmin',
-        'copy:pdf',
-        'copy:certificates'
+        'htmlmin'
     ],
 
     review: [
