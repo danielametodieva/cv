@@ -30,7 +30,7 @@
   h2,
   h3 {
     color: $gray-darker;
-    text-transform: uppercase;
+    text-transform: $headings-transform;
   }
 
   h2,
@@ -73,7 +73,9 @@
       background-color: $col-marked;
     }
 
-    &:not(:last-child) { margin-bottom: 1.2%; }
+    &:not(:last-child) {
+      margin-bottom: $line-offset;
+    }
   }
 
   section:not(.expanded) .item {

@@ -20,7 +20,7 @@ mixin employment(name, data)
             | #{item.description}
         if item.meta
           footer.cf.meta
-            label.light retouching tasks:
+            label.light #{labels.employment}:
             p.dark
               each meta in item.meta
                 span #{meta},

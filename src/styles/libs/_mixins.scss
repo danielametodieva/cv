@@ -36,3 +36,20 @@
   @include perspective(1000);
   // @include scale();
 }
+
+
+//--------------------------| Language
+
+@mixin lang-variables() {
+
+}
+
+
+@mixin lang($lang: 'en') {
+
+
+  body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+  }
+}

@@ -238,7 +238,7 @@
         "label": "Devices",
         "list": [
           {
-            "title": "Wacom Graphic Tablet",
+            "title": "Graphic tablets",
             "period": "since 2011"
           },
           {
@@ -284,7 +284,7 @@
         "name": "Food Photography & Food Styling certificate",
         "authority": "HRC Culinary Academy",
         "date": "Nov 18, 2015",
-        "url": "certificates/hrc_culinary_academy.pdf"
+        "url": "/certificates/hrc_culinary_academy.pdf"
       }
     ]
   },

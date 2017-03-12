@@ -1,12 +1,12 @@
 module.exports = {
 
-    // PDF file
-    pdf: {
+    // Resumes
+    resumes: {
         files: [{
             expand: true,
-            cwd: 'src',
-            src: ['cv.pdf'],
-            dest: 'dist/'
+            cwd: 'src/attachments/resumes',
+            src: ['**/*.*'],
+            dest: 'dist/resumes'
         }]
     },
 
@@ -14,8 +14,8 @@ module.exports = {
     certificates: {
         files: [{
             expand: true,
-            cwd: 'src/certificates',
-            src: ['*.*'],
+            cwd: 'src/attachments/certificates',
+            src: ['**/*.*'],
             dest: 'dist/certificates'
         }]
     }
