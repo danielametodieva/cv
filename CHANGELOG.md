@@ -1,3 +1,13 @@
+<a name="1.2.0"></a>
+# 1.2.0 (2017-03-12)
+
+
+### Features
+
+* **Language:** New bulgarian version ([2a5523d](https://github.com/danielametodieva/cv/commit/2a5523d))
+
+
+
 <a name="1.1.1"></a>
 ## 1.1.1 (2017-01-10)
 

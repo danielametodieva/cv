@@ -1,5 +1,4 @@
 {
-  "title": "Daniela Metodieva",
   "contacts": {
     "profiles": {
       "linkedin": {
@@ -12,14 +11,8 @@
       }
     },
     "data": {
-      "email": "metodieva.daniel@gmail.com",
+      "email": "daniela.p.metodieva@gmail.com",
       "phone": "+359 (87) 8680598"
-    }
-  },
-  "addons": {
-    "pdf": {
-      "filename": "Daniela Metodieva's CV.pdf",
-      "url": "http://cv.daniela.pro/cv.pdf"
     }
   }
 }

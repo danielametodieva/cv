@@ -3,5 +3,5 @@ mixin certificates(name, data)
     each item in data.content
       li.certificate
         a(target='_blank', href=item.url) #{item.name}
-        | &nbsp;by #{item.authority}&nbsp;
+        | &nbsp;#{labels.certificates} #{item.authority}&nbsp;
         span.meta.dark (#{item.date})
