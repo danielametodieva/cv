@@ -1,33 +1,33 @@
 module.exports = {
 
-    build: [
-        // favicons
-        ['realFavicon'],
+  build: [
+    // favicons
+    ['realFavicon'],
 
-        // markup
-        ['pug'],
+    // markup
+    ['pug'],
 
-        // styles
-        ['stripCssComments', 'compass'],
+    // styles
+    ['stripCssComments', 'sass'],
 
-        // scripts
-        ['concat', 'uglify'],
+    // scripts
+    ['concat', 'uglify'],
 
-        // resumes
-        ['clean:resumes', 'copy:resumes'],
+    // resumes
+    ['clean:resumes', 'copy:resumes'],
 
-        // certificates
-        ['clean:certificates', 'copy:certificates']
-    ],
+    // certificates
+    ['clean:certificates', 'copy:certificates']
+  ],
 
-    prod: [
-        'htmlmin'
-    ],
+  prod: [
+    'htmlmin'
+  ],
 
-    review: [
-        'open:build',
-        'open:repo',
-        'open:prod'
-    ]
+  review: [
+    'open:build',
+    'open:repo',
+    'open:prod'
+  ]
 
 };
