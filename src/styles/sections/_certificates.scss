@@ -14,15 +14,21 @@
     margin:  0 -3%;
     list-style: none;
 
-    .meta { white-space: nowrap; }
+    .meta {
+      white-space: nowrap;
+    }
 
-    &:nth-child(2n+1) { background-color: $col-marked; }
+    &:nth-child(2n+1) {
+      background-color: $col-marked;
+    }
 
     &:not(:last-child) {
       margin-bottom: $line-offset;
     }
 
-    &::before { @include bullet(); }
+    &::before {
+      @include bullet();
+    }
   }
 
 }
