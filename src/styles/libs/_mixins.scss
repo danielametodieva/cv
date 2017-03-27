@@ -24,7 +24,9 @@
     content: ' ';
   }
 
-  &::after { clear: both; }
+  &::after {
+    clear: both;
+  }
 }
 
 
@@ -40,14 +42,7 @@
 
 //--------------------------| Language
 
-@mixin lang-variables() {
-
-}
-
-
 @mixin lang($lang: 'en') {
-
-
   body {
     font-family: $font-family-base;
     font-size: $font-size-base;

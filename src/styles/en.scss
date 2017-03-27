@@ -2,41 +2,11 @@
 
 
 
-//--------------------------| Compass
+//--------------------------| Language
 
-@import 'compass';
-
-
-//--------------------------| Dependencies
-
-@import 'CSS:../../node_modules/normalize.css/normalize';
+@import 'libs/data/language/en';
 
 
-//--------------------------| Libraries
+//--------------------------| Includes
 
-@import 'libs/data/en';
-@import 'libs/data/common';
-@import 'libs/mixins';
-
-
-//--------------------------| Base
-
-@import 'base/scaffolding';
-@import 'base/utilities';
-@import 'base/typography';
-@import 'base/common';
-
-
-//--------------------------| Page
-
-@import 'page/*';
-
-
-//--------------------------| Sections
-
-@import 'sections/*';
-
-
-//--------------------------| Print styles
-
-@import 'print';
+@import 'bundle';
