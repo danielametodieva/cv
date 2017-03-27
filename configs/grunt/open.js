@@ -1,7 +1,7 @@
 module.exports = {
   dev: {
     app: 'Google Chrome',
-    path: 'http://localhost:8000'
+    path: 'http://localhost:8001'
   },
 
   prod: {
