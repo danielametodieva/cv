@@ -1,13 +1,27 @@
 language: node_js
 node_js:
-  - "node"
-
-script: bash ./deploy.sh
-env:
-  global:
-  - ENCRYPTION_LABEL: "13a365a81889"
-  - COMMIT_AUTHOR_EMAIL: "daniela.p.metodieva@gmail.com"
-
+- node
+script:
+- npm install grunt-cli -g
+- npm install
+- grunt build --target='prod'
+- printf '.gitignore\ndeployed*' > dist/.gitignore
+- printf 'cv.daniela.pro' > dist/CNAME
+- cp 'README.md' dist
 branches:
   only:
-  - prod
+  - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
+deploy:
+- provider: releases
+  api_key:
+    secure: FN8vExDnQDNSt7WGGWtZl1x5Q0eKwnjSRPBZ+4Yd/GemPEnLS09n7xJTiDnw/44fDfcqLw8wzkZ6xcVWrmmtdgLxq1KB2qnWyQzLfRp1SGm27n3U0YIME5Km7Vs9BrzMN+kfzDTkyfTj/8xOvK6mh2bT3ak367icrdbJHspDAuMUat2YXuGIGqCkVhWZ5dqx7Ttglwif9yjpRxPY6RUYFqpqZ4Pj1vzR4eXD2RHA+FesKohBVCGc5KsLwRuCLazmgt072AY8hs0hKAmuCxIrPpP+PV1fDuj8jngoGUZbLVWFrOc2RZ48mSTLcQXfDM9GGchwgYhcTjVC+O6+p1UiA1GsnywVFuhr4cv6UWo5MsZUxnnpnCFe5l65bY+l9s0qaKieM2USzcplbt5GVOiVZtOg9eWAyI98TaoKgTlXPR4vG3y2EDmKmZLoUPO2Wib2ODQQ/HuERGZ8lG2vJ+UcTMJx289YM4/1A8JVpG5oydM0eDWIB9QTEBioRDuM8I+0YNmy7aPC32WQeSAvJH6te1OjyZnSPvhPUYI2cmGBVwskjXaF5XiXf3uIL5N2u3neWsM5gk7u2p4Q/mSr1wgocVLGMtQ3JH9cNEHYReWIJyCU1saHpQLrJKr5VNLvOteiuTHPdx9A2SJ9e3+91COBt10vt+O/tJUEilMdQkqb/CY=
+  skip_cleanup: true
+  on:
+    tags: true
+- provider: pages
+  skip_cleanup: true
+  local_dir: dist
+  github_token:
+    secure: FN8vExDnQDNSt7WGGWtZl1x5Q0eKwnjSRPBZ+4Yd/GemPEnLS09n7xJTiDnw/44fDfcqLw8wzkZ6xcVWrmmtdgLxq1KB2qnWyQzLfRp1SGm27n3U0YIME5Km7Vs9BrzMN+kfzDTkyfTj/8xOvK6mh2bT3ak367icrdbJHspDAuMUat2YXuGIGqCkVhWZ5dqx7Ttglwif9yjpRxPY6RUYFqpqZ4Pj1vzR4eXD2RHA+FesKohBVCGc5KsLwRuCLazmgt072AY8hs0hKAmuCxIrPpP+PV1fDuj8jngoGUZbLVWFrOc2RZ48mSTLcQXfDM9GGchwgYhcTjVC+O6+p1UiA1GsnywVFuhr4cv6UWo5MsZUxnnpnCFe5l65bY+l9s0qaKieM2USzcplbt5GVOiVZtOg9eWAyI98TaoKgTlXPR4vG3y2EDmKmZLoUPO2Wib2ODQQ/HuERGZ8lG2vJ+UcTMJx289YM4/1A8JVpG5oydM0eDWIB9QTEBioRDuM8I+0YNmy7aPC32WQeSAvJH6te1OjyZnSPvhPUYI2cmGBVwskjXaF5XiXf3uIL5N2u3neWsM5gk7u2p4Q/mSr1wgocVLGMtQ3JH9cNEHYReWIJyCU1saHpQLrJKr5VNLvOteiuTHPdx9A2SJ9e3+91COBt10vt+O/tJUEilMdQkqb/CY=
+  on:
+    tags: true
