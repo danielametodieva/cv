@@ -1,3 +1,15 @@
+<a name="1.4.0"></a>
+# 1.4.0 (2017-04-08)
+
+
+### Features
+
+* **Deploy:** GitHub Pages & GitHub Releases ([c2c344b](https://github.com/danielametodieva/cv/commit/c2c344b))
+* **Package.json:** daniela.p.metodieva[@gmail](https://github.com/gmail).com ([7df8cfe](https://github.com/danielametodieva/cv/commit/7df8cfe))
+* **System:** Removed .gitignore ([3b5ef61](https://github.com/danielametodieva/cv/commit/3b5ef61))
+
+
+
 <a name="1.3.0"></a>
 # 1.3.0 (2017-03-27)
 
