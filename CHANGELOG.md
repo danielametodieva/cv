@@ -2,11 +2,6 @@
 ## 1.4.2 (2017-08-18)
 
 
-
-<a name="1.4.1"></a>
-## 1.4.1 (2017-08-18)
-
-
 ### Bug Fixes
 
 * **Typekit:** Replaced wrong script src ([676982d](https://github.com/danielametodieva/cv/commit/676982d))
