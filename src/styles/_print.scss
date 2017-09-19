@@ -5,7 +5,10 @@
 @media print {
 
   body {
-    -webkit-print-color-adjust: exact;
+    &,
+    * {
+      -webkit-print-color-adjust: exact;
+    }
   }
 
   .cv {
@@ -17,7 +20,6 @@
     }
 
     a {
-      color: $gray-dark;
       text-decoration: none;
     }
 
@@ -55,6 +57,10 @@
         &.phone,
         &.email {
           display: inline;
+        }
+
+        &.email {
+          color: $link-normal-color;
         }
       }
     }
