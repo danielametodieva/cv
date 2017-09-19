@@ -1,3 +1,16 @@
+<a name="1.5.0"></a>
+# 1.5.0 (2017-09-19)
+
+
+### Features
+
+* **Media Queries:** Small screen improvements ([ef38d4c](https://github.com/danielametodieva/cv/commit/ef38d4c))
+* **Print styles:** Updated document layout ([ac72411](https://github.com/danielametodieva/cv/commit/ac72411))
+* **Summary:** Handle HTML text ([e0aae78](https://github.com/danielametodieva/cv/commit/e0aae78))
+* **Summary:** Removed label ([0855dc2](https://github.com/danielametodieva/cv/commit/0855dc2))
+
+
+
 <a name="1.4.2"></a>
 ## 1.4.2 (2017-08-18)
 
