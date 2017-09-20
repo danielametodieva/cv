@@ -1,3 +1,13 @@
+<a name="1.5.1"></a>
+## 1.5.1 (2017-09-20)
+
+
+### Bug Fixes
+
+* **Offsets:** Extend padding on small screens ([6edcd33](https://github.com/danielametodieva/cv/commit/6edcd33))
+
+
+
 <a name="1.5.0"></a>
 # 1.5.0 (2017-09-19)
 
