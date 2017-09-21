@@ -1,3 +1,18 @@
+<a name="1.6.0"></a>
+# 1.6.0 (2017-09-21)
+
+
+### Bug Fixes
+
+* **Header:** Side-padding between links ([b734442](https://github.com/danielametodieva/cv/commit/b734442))
+
+
+### Features
+
+* **Header:** Improved mobile offsets & font-sizes ([72ff032](https://github.com/danielametodieva/cv/commit/72ff032))
+
+
+
 <a name="1.5.1"></a>
 ## 1.5.1 (2017-09-20)
 
