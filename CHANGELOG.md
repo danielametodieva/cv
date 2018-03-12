@@ -2,16 +2,6 @@
 ## 1.7.2 (2018-03-12)
 
 
-
-<a name="1.7.1"></a>
-## 1.7.1 (2018-03-12)
-
-
-
-<a name="1.7.0"></a>
-# 1.7.0 (2018-03-12)
-
-
 ### Features
 
 * **Fonts:** New Bulgarian typeface: Arsenal ([b37470c](https://github.com/danielametodieva/cv/commit/b37470c))
