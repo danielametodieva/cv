@@ -1,3 +1,14 @@
+<a name="1.7.0"></a>
+# 1.7.0 (2018-03-12)
+
+
+### Features
+
+* **Fonts:** New Bulgarian typeface: Arsenal ([b37470c](https://github.com/danielametodieva/cv/commit/b37470c))
+* **PDFs:** Updated english cv.pdf ([f21b9c7](https://github.com/danielametodieva/cv/commit/f21b9c7))
+
+
+
 <a name="1.6.0"></a>
 # 1.6.0 (2017-09-21)
 
