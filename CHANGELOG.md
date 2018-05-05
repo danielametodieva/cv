@@ -1,3 +1,16 @@
+<a name="1.8.0"></a>
+# 1.8.0 (2018-05-05)
+
+
+### Features
+
+* **Attachments:** Updated PDF resumes ([45df654](https://github.com/danielametodieva/cv/commit/45df654))
+* **Content:** Updated employment info ([8be6170](https://github.com/danielametodieva/cv/commit/8be6170))
+* **Content:** Updated pro experience info ([c8c3fe7](https://github.com/danielametodieva/cv/commit/c8c3fe7))
+* **Print styles:** Updated layout ([be76754](https://github.com/danielametodieva/cv/commit/be76754))
+
+
+
 <a name="1.7.5"></a>
 ## 1.7.5 (2018-03-17)
 

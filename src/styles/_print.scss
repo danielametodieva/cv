@@ -70,6 +70,20 @@
       margin-bottom: 30px;
     }
 
+    .section-summary {
+      display: none;
+    }
+
+    .details {
+      max-height: 0 !important;
+    }
+
+    section .item {
+      &:nth-of-type(2n+2) header {
+        background-color: $body-bg !important;
+      }
+    }
+
     .item:not(:last-child),
     .section-references .contact:not(:last-child),
     [class='section-tech_experience'] .label {
@@ -81,13 +95,7 @@
       margin-bottom: 20px;
     }
 
-    @at-root {
-      html[lang='en'] .cv .section-employment:not(.expanded) ~ [class='section-tech_experience'] {
-        page-break-before: always;
-      }
-    }
-
-    .section-employment.expanded ~ [class='section-pro_experience'] {
+    .section-skills {
       page-break-before: always;
     }
 

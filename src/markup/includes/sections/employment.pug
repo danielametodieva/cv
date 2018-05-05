@@ -17,7 +17,7 @@ mixin employment(name, data)
       .details
         if item.description
           p.description
-            | #{item.description}
+            | !{item.description}
         if item.meta
           footer.cf.meta
             label.light #{labels.employment}:
