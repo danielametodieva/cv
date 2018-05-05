@@ -158,11 +158,14 @@
           "Ghost Mannequin effect",
           "Clipping paths",
           "Frequency separation",
-          "Shape correction",
+          "Shape/Body correction",
           "Background correction",
-          "Colour correction",
-          "Spot healing",
+          "Colour/Brightness/Exposure correction",
+          "Skin retouching",
           "Compositing",
+          "Age regression/progression",
+          "Panorama stitching",
+          "Photo Restoration",
           "Layer masking",
           "Smart objects & filters"
         ]
