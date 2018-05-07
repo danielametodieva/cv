@@ -1,3 +1,13 @@
+<a name="1.9.0"></a>
+# 1.9.0 (2018-05-07)
+
+
+### Features
+
+* **Behance profile:** Changed to danielametodieva ([2bdbdbf](https://github.com/danielametodieva/cv/commit/2bdbdbf))
+
+
+
 <a name="1.8.0"></a>
 # 1.8.0 (2018-05-05)
 
