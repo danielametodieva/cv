@@ -2,7 +2,8 @@ mixin tech_experience(name, data)
   .categories.cf
     each val, index in data.content
       .category(data-experience=index)
-        h3.label #{val.label}
+        h3.label
+          em #{val.label}
         ul
           each tech in val.list
             li

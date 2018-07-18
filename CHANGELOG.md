@@ -1,3 +1,18 @@
+<a name="1.10.0"></a>
+# 1.10.0 (2018-07-18)
+
+
+### Bug Fixes
+
+* **Experience:** Italic labels ([86cb403](https://github.com/danielametodieva/cv/commit/86cb403))
+
+
+### Features
+
+* **Content:** Updated information ([d4cdf6e](https://github.com/danielametodieva/cv/commit/d4cdf6e))
+
+
+
 <a name="1.9.0"></a>
 # 1.9.0 (2018-05-07)
 
