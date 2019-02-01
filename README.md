@@ -1,11 +1,22 @@
-# Daniela Metodieva's CV
+# Daniela Metodieva’s CV
 
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.svg)](http://gruntjs.com/) [![Travis](https://img.shields.io/travis/danielametodieva/cv.svg)](https://travis-ci.org/danielametodieva/cv) [![David](https://img.shields.io/david/dev/martinmethod/cv.svg)](https://david-dm.org/danielametodieva/cv?type=dev) [![GitHub release](https://img.shields.io/github/release/danielametodieva/cv.svg)](https://github.com/danielametodieva/cv/releases/latest)
+[![Travis](https://img.shields.io/travis/danielametodieva/cv.svg)](https://travis-ci.org/danielametodieva/cv) [![David](https://img.shields.io/david/danielametodieva/cv.svg)](https://david-dm.org/danielametodieva/cv) [![David](https://img.shields.io/david/dev/danielametodieva/cv.svg)](https://david-dm.org/danielametodieva/cv?type=dev) [![GitHub release](https://img.shields.io/github/release/danielametodieva/cv.svg)](https://github.com/danielametodieva/cv/releases/latest)
 
-Photography has been part of me since I got my first job position as a photo assistant. I was fascinated by the ability to tell stories through pictures. So I started experimenting with some personal ideas of photo projects.
+#
 
-After some time I gained wish to obtain more professional know-how on how pictures can be improved. Luckily, I got the chance to start working on variety of projects as a retoucher. That experience helped me to improve my technical skills to a world-class level. Ever since, Photoshop gives wings to my desire of doing creative and well-thought-out photos. And the outcome always brings happiness to people I work with.
+*Technologies:* **ES6**, **HTML5**, **CSS3**
 
-Today, I feel confident enough to have individual approach to every single project that I work on and no matter if it’s mine or not, I always do my work with passion and attention to detail. Retouching is my superpower to make the world a better place. And it’s also the reason of my desire to travel around the globe, looking for new opportunities and sharing my experience with other retouchers.
+*Libraries:* **[React](https://reactjs.org)**, **[Lodash](https://lodash.com)**, **[Moment.js](http://momentjs.com)**
 
-— [Daniela Metodieva](https://bg.linkedin.com/in/daniela-metodieva-2373a083 "Go to my LinkedIn profile")
+*Linters:* **[ESLint](https://eslint.org)**, **[stylelint](https://stylelint.io)**
+
+*Compilers:* **[Babel](http://babeljs.io)**, **[PostCSS](https://postcss.org)**, **[Sass](http://sass-lang.com)**
+
+*Bundler:* **[Webpack](http://webpack.js.org)**
+
+*CI:* **[Travis](https://travis-ci.org)**
+
+*CMS:* **[Contentful](https://www.contentful.com)**
+
+#
+*Production:* **[cv.daniela.pro](http://cv.daniela.pro)**
