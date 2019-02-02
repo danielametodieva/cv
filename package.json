@@ -1,7 +1,7 @@
 {
   "name": "cv",
   "title": "Daniela Metodieva’s CV",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "license": "UNLICENSED",
   "description": "Daniela Metodieva’s CV",
   "scripts": {
@@ -38,6 +38,7 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-hot-loader": "^4.6.3",
+    "react-tooltip": "^3.9.2",
     "yarn": "^1.13.0"
   },
   "devDependencies": {
