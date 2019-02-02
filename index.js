@@ -8,7 +8,7 @@
 import React from 'react';
 
 // Config
-import { ga as gaNumber, contentfulAccessToken, contentfulSpace } from './configs/account.json';
+import { contentfulAccessToken, contentfulSpace } from './configs/account.json';
 
 // App
 import init from './client';
@@ -19,6 +19,5 @@ import init from './client';
 init({
   bilingual: true,
   contentfulAccessToken,
-  contentfulSpace,
-  gaNumber
+  contentfulSpace
 });
